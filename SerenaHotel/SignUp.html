@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<link rel="icon" href="images/logo.png">
+
+	<title>Signup</title>
+	<link rel='stylesheet' href='Includes/login.css' type='text/css' />
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="Includes/login.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	body
+	{
+		background-image:url('images/rooms/1.jpeg');
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	</style>
+</head>
+
+
+<body>
+	<img src="images/logo.png" class="imgserena" width="200" height="120"  alt="Avatar">
+	<form  name='registration' onSubmit="return formValidation();" class="form" >
+		
+			FirstName <input class="inputSignUp" type="text" name="firstname" size="20" required /> &nbsp;
+			LastName &nbsp; <input class="inputSignUp" type="text" name="lastname" size="20" required /><br><br>
+			Password &nbsp; <input class="inputSignUp" type="password" name="Password" size="20" required /> &nbsp; 
+			Confirm &nbsp; &nbsp;  <input class="inputSignUp" type="password" name="Confirm" size="20" required /><br> <br>
+			UserName <input class="inputSignUp" type="text" name="username" size="30" required /> &nbsp; 
+			
+			Address &nbsp; &nbsp;  <input class="inputSignUp" type="text" name="address" size="30" required />&nbsp; &nbsp;<br><br>
+			Country &nbsp; &nbsp;  <select class="SelectForm" name="country">	
+						<option selected="" value="Default">(Please select a country)</option>
+						<option value="AF">Australia</option>
+						<option value="AL">Canada</option>
+						<option value="DZ">India</option>
+						<option value="AS">Russia</option>
+						<option value="AD">USA</option>
+					</select><br><br>	
+			ZipCode  &nbsp; <input class="inputSignUp" type="text" name="zip" required  />  &nbsp;
+			Email &nbsp; &nbsp; &nbsp; &nbsp; <input  class="inputSignUp" type="text" name="email" size="30" required  /><br><br>&nbsp;
+			<label class="containerR"> I Am Not Robot
+			  <input class="inputSignUp" type="checkbox" required />
+			  <span class="checkmark"></span>
+			</label>
+			<input class="inputSignUp" type="submit" name="submit" value="Submit" />		
+	</form>
+	<form class="Btn" method="post" action="home.html">
+			 &nbsp;  <button  class="Homebtn"> Home </button> 
+	</form>
+</body>
+</html>

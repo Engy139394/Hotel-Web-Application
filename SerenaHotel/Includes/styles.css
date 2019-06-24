@@ -1,0 +1,975 @@
+body
+{
+	margin:0;
+	padding:0;
+	display: flex;
+	flex-direction: column;
+	top:0;
+    bottom:0;
+    left:0;
+    right:0;
+	
+}
+/*--------------------------------------------- Logo in Navigation Bar -------------------------------------------*/
+#logoN
+{
+	width: 100px;
+	height: 60px;
+}
+/*---------------------------------------------  Navigation Bar -------------------------------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;	
+}
+ul li
+{
+	margin-left: 80px;
+	
+}
+
+li {
+    float: left; 
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	margin:0 auto;
+	font-size:20px;
+	
+}
+
+li a:hover {
+    background-color:orange;
+	height:60px;
+}
+
+#mainimage
+{
+	
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+   
+}
+
+.login
+{
+	float:right;
+	margin-right:100px;
+}
+
+
+
+.imageS
+{
+	width:100%;
+	height:500px;
+}
+
+.ContainerA{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.ContainerB{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+.ImageSlide {
+    display: none;
+}
+.ImageSlide1 {
+    display: none;
+	text-align:center;
+	
+}
+
+
+
+
+
+.SlideText {
+    color: #edb83a;
+    text-transform: uppercase;
+    letter-spacing: 20px;     
+    font-size: 20px;     
+    font-family: "Merriweather";
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+	
+}
+
+.SlideCounter {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.SlideCounter1 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/*---------------------------------------------  Restaurants/ Text on image slider -------------------------------------------*/
+.text1 {
+     color: #edb83a;
+     text-transform: uppercase;
+     letter-spacing: 20px;
+     margin-top: 150px;
+     font-size: 20px;
+     padding: 8px 12px;
+     position: absolute;
+     font-family: "Merriweather";
+     width: 100%;
+     text-align: center;
+     white-space: nowrap;
+     overflow: hidden;
+     top: 20%;
+
+
+ }
+.text2 {
+
+    margin-top: 40px;
+    position: absolute;
+    font-family: "Merriweather";
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 50%;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+.text3 {
+
+     text-transform: uppercase;
+     letter-spacing: -1px;
+     width: 100%;
+     position: absolute;
+     text-align: center;
+     white-space: nowrap;
+     overflow: hidden;
+     top: 80%;
+     margin-right: 200px;
+     margin-left: 200px;
+     font-size: 14px;
+     float: left;
+     font-family: "Open Sans";
+     color: #888;
+ }
+
+/* Fading animation */
+/*---------------------------------------------  restaurants and events pages  -------------------------------------------*/
+
+.FadeImg
+{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 500px;  
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+
+h4{
+    color: #111111;
+    font-family: Merriweather;
+    margin-left: 30px;
+    font-size:14px;
+
+}
+.whitetext2{
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: inherit;
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #333;
+    font-family: "Cinzel";
+    text-align: center;
+
+
+}
+
+#wrapper11{
+    margin-top: 50px;
+    margin-left: 85px;
+}
+#wrapper12{
+    margin-top: 50px;
+    margin-left: 85px;
+}
+
+
+.containerr {
+    position: relative;
+    width: 385px;
+    float: left;
+
+
+}
+
+.image {
+
+    width: 100%;
+    height: auto;
+}
+
+
+.overlayy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #EDB83A;
+    overflow: hidden;
+    width: 100%;
+    height: 30%;
+    transition: .5s ease;
+}
+
+.containerr:hover .overlayy {
+    height: 100%;
+}
+.containerr:hover .phototext a {
+    top: 20%;
+}
+
+.phototext a {
+    white-space: nowrap;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #333;
+    font-family: "Cinzel";
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 3px;
+    position: absolute;
+    overflow: hidden;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.phototext a:hover{
+
+    text-decoration: underline;
+}
+.phototext p{
+    color: #333;
+   text-align: center;
+    margin-top: 95px;
+    margin-left: 60px;
+    margin-right: 60px;
+    overflow: hidden;
+}
+.phototext h2 {
+    font-size: 32px;
+    color: #333;
+    font-family: "Cinzel";
+    margin: 30px 0;
+    text-align: center;
+}
+.phototext span{
+    font-size: 15px;
+    color: #333;
+    font-family: "Cinzel";
+    font-weight: lighter;
+    text-align: center;
+    overflow: hidden;
+}
+.borderbottom{
+
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+    border-bottom-color: #EDB83A ;
+    margin: auto;
+    width: 50px;
+    margin-top: -25px;
+}
+
+/*---------------------------------------------  Event Details jquery  -------------------------------------------*/
+#panel, #flip {
+    padding: 5px;
+    text-align: center;    
+    border: solid 1px #EDB83A;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+#flip {
+    background-color:#6495ED;
+    color: black;
+    border: 2px solid #EDB83A;
+    border: none;
+    font-family: "Cinzel";
+    padding: 16px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;    
+    transition-duration: 0.4s;
+    cursor: pointer;
+	
+	font-size: 32px;
+    letter-spacing: -1px;
+    line-height: inherit;
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #333;
+    font-family: "Cinzel";
+    text-align: center;
+}
+
+
+#flip:hover {
+    background-color: #EDB83A;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#panel
+{
+	font-size: 32px;
+    letter-spacing: -1px;
+    line-height: inherit;
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #333;
+    font-family: "Cinzel";
+    text-align: center;
+}
+#p1
+{
+font-family: "Merriweather";
+color: #edb83a;	
+
+font-size: 32px;
+letter-spacing: -1px;
+line-height: inherit;
+text-align:center;
+
+}
+
+#eventClick {
+  height:50px;
+  width:200px;
+  margin-top:20px;
+  background:#97B7CD;	
+  margin-left:700px;
+  color:#fff;
+  font-weight:400;
+  text-shadow:1px 1px 0px #2d7baf;
+  box-shadow:0px 3px 0px #2d7baf;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+ cursor:pointer;
+}
+#eventClick:hover {
+    background-color: #EDB83A;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*---------------------------------------------  Spa page -------------------------------------------*/
+.desc-part{
+    background: #eee;  
+    width: 32%;
+    height: 450px;
+	margin-top:-35px;
+}
+
+.desc-part2{
+    background: #eee;  
+    width: 32%;
+    height: 450px;
+	margin-top:-35px;
+}
+
+.desc{
+    padding-top: 0px;
+    margin-left: 50px;
+    padding-right: 50px; 
+    overflow: hidden;
+	font-family: "Merriweather";
+	font-size: 15px;
+	
+
+}
+
+.im{
+	
+	margin-left: 445px;
+	margin-top: -450px;
+	width: 600px;
+	
+}
+.im1
+{
+	margin-left: 445px;
+	margin-top: -450px;
+}
+#spa{
+	width: 900px;
+	height: 450px;
+	
+}
+#spa2
+{
+	width: 900px;
+	height: 450px;
+	margin-bottom:-50px;
+}
+
+.borderbottomS{
+
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+    border-bottom-color: #edb83a ;
+    margin: auto;
+    width: 200px;
+    margin-top: -25px;
+}
+footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+}
+/*---------------------------------------------  Home -------------------------------------------*/
+.navbar
+{
+	z-index:99;
+	text-decoration:none;
+}
+.maintxt
+{
+	text-align:center;
+	font-size:35px;
+	font-family:Garamond;
+	opacity:0.8;
+	margin-top:250px;
+}
+
+.maintxt p
+{
+	font-size:25px;
+	font-family:Monospace;	
+}
+li a:hover {
+    background-color:orange;
+	text-decoration:none;
+	color:white;
+	opacity:0.8;
+}
+#mainimage
+{
+	width: 100%;
+   
+}
+
+.login
+{
+	float:right;
+	margin-right:100px;
+}
+
+.imglogo
+{
+	margin-left:-50px;
+	margin-top:-16px;
+}
+.scroll
+{
+	width:120px;
+	height:50px;
+	background-color:black;
+	color:white;
+	border:none;
+	z-index:99;
+	position:fixed;
+	top:470px;
+	left:0;
+	bottom:0;
+	right:1450px;
+	margin:auto;
+	cursor:pointer;
+	border-radius:80px;
+	opacity:0.7;
+	display:none;
+}
+.scroll:hover
+{
+	opacity:1;
+	
+}
+.slider
+{
+	width:1800px;
+	height:800px;
+	overflow:hidden;
+	margin:30px auto;
+}
+
+ 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius:30px;
+ 
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+ 
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+
+
+
+.footer{
+background-color:#ADD8E6;
+color:#4682B4;
+text-align:center;
+padding:5px;
+height:50px;
+}
+.indexText 
+{
+    color: #edb83a;
+    text-transform: uppercase;
+    letter-spacing: 20px;     
+    font-size: 20px;     
+    font-family: "Merriweather";
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+	
+	
+ }
+ 
+ 
+.indexImg
+{
+	width:400px;
+	height:200px;
+}
+.Connect
+{
+	float: right;
+}
+#Map{
+  
+    width: 50%;
+	margin-left: 100px;
+
+}
+#formside{
+  
+    width: 33%;
+	margin-left: -100px;
+	margin-top: -80px;
+}
+.background{
+    width: 365px;
+    height: 300px;
+    background-color: #eee;    
+    margin-top: 80px;
+
+}
+.background iframe{
+    width: 300px;
+    height: 190px;
+	margin-left:20px;
+    
+}
+.iframee
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+
+
+
+
+/*---------------------------------------------  Rooms -------------------------------------------*/
+
+
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	margin-top:300px;
+	
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	text-align:center;
+}
+
+#customers tr:nth-child(even){background-color: red; opacity:0.6; color:white;}
+#customers tr:nth-child(odd){background-color:green;opacity:0.6; color:white;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+	text-align:center;
+}
+
+
+
+
+#customers2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	margin-top:50px;
+	text-align:center;
+	
+}
+
+#customers2 td, #customers2 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	text-align:center;
+}
+
+#customers2 tr:nth-child(even){background-color: red; opacity:0.6; color:white;}
+#customers2 tr:nth-child(odd){background-color:green;opacity:0.6; color:white;}
+
+#customers2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+	text-align:center;
+}
+
+#customers3 tr:nth-child(even){background-color: red; opacity:0.6; color:white;}
+#customers3 tr:nth-child(odd){background-color:green;opacity:0.6; color:white;}
+
+#customers3 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+	text-align:center;
+}
+
+
+
+
+#customers3
+ {
+	 display:none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	margin-top:50px;
+	text-align:center;
+	
+}
+
+#customers3 td, #customers2 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	text-align:center;
+}
+
+#customers3 tr:nth-child(even){background-color: red; opacity:0.6; color:white;}
+#customers3 tr:nth-child(odd){background-color:green;opacity:0.6; color:white;}
+
+#customers3 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+	text-align:center;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+	
+    
+}
+
+/* Modal Content */
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myBtn
+{
+	width:100px;
+	height:50px;
+	margin-top:150px;
+	position:fixed;
+	z-index:99;
+	background-color:orange;
+	border:none;
+	border-radius:15px;
+	color:white;
+	opacity:0.8;
+	transition:1s;
+}
+#myBtn:hover
+{
+	width:120px;
+	opacity:1;
+	background-color:red;
+	transition:1s;
+}
+/*---------------------------------------------  Login -------------------------------------------*/
+
+
+
+
+
+.Loginform
+{
+  position:relative;
+  width:360px;
+  height:350px;
+  margin:50px auto;
+  text-align:center;
+  background:#ecf0f1;
+  padding:40px;
+  -webkit-border-radius:20px 0 0 0;
+     -moz-border-radius:20px 0 0 0;
+          border-radius:20px 0 0 0;
+  -webkit-box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+     -moz-box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+          box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+  box-shadow: 20px 20px 20px;
+  margin-top:100px;
+
+}
+
+
+.LoginH {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:2em;
+  font-weight:300;
+  margin-bottom:25px;
+  color:#7f8c8d;
+  text-shadow:1px 1px 0px white;
+  margin:0;
+  padding:0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input {
+  display:block;
+  width:315px;
+  padding:14px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  border:0;
+  margin-bottom:12px;
+  color:#7f8c8d;
+  font-weight:600;
+  font-size:16px;
+ 
+}
+
+input:focus {
+  background:#fafafa;
+ 
+}
+
+
+.liLog{
+  float:right;
+  list-style:none;
+  
+
+
+}
+.liLog:hover
+{
+	background-color: #edb83a;
+	
+}
+
+.log, .log:visited {
+  text-decoration:none;
+  color:#7f8c8d;
+  font-weight:400;
+  text-shadow:1px 1px 0px white;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+ 
+}
+
+.button {
+  position:relative;
+  float:left;
+  width:145px;
+  margin-top:10px;
+  background:#3498db;
+  color:#fff;
+  font-weight:400;
+  text-shadow:1px 1px 0px #2d7baf;
+  box-shadow:0px 3px 0px #2d7baf;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+ cursor:pointer;
+}
+.button:hover
+{
+	opacity:3;
+	background-color: #edb83a;
+	width:130px;
+	transition:1s;
+}
+.button2
+{
+	float:left;
+	
+}
+
+
+.CustomerFeedback
+{
+	background-color:orange;
+	
+}
+@media only screen and (max-width:1124px) {
+    #eventClick
+	{
+		margin-left:500px;
+	}
+}
+@media only screen and (max-width:1224px) {
+    #eventClick
+	{
+		margin-left:600px;
+	}
+}
+@media only screen and (max-width:1366px) {
+    #eventClick
+	{
+		margin-left:590px;
+	}
+}
+@media only screen and (max-width:732px) {
+    #eventClick
+	{
+		margin-left:200px;
+	}
+}
+@media only screen and (max-width:1125px) {
+    #eventClick
+	{
+		margin-left:480px;
+	}
+}
+@media only screen and (max-width:1046px) {
+    #eventClick
+	{
+		margin-left:450px;
+	}
+}
+@media only screen and (max-width:940px) {
+    #eventClick
+	{
+		margin-left:400px;
+	}
+}

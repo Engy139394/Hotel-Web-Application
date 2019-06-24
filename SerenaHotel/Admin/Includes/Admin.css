@@ -1,0 +1,543 @@
+body {
+    font-family: "Lato", sans-serif;
+	background-image:url('admin.jpeg');
+	background-repeat:no-repeat;	
+	background-size:cover;
+	color:black;
+	
+	}
+
+.stats
+{
+	float:right;
+
+}
+.grey
+{
+	width:300px;
+	height:50px;
+	background-color:#CCCCCC;
+	opacity:0.6;
+	margin:auto;
+
+}
+.grey .green
+{
+	
+	background-color:green;
+	
+}
+.grey .red
+{
+	
+	background-color:red
+}
+.grey .blue
+{
+	
+	background-color:blue;
+}
+.grey .orange
+{
+	background-color:orange;
+}
+
+
+
+
+
+p
+{
+	color:white;
+	font-size:20px;
+	font-family:Monospace;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.card {
+  box-shadow: 0 50px 10px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  float:left;
+  background-color:#F5F7FA;
+  opacity:0.8;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: black;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    width: 25%;
+	opacity:0.7;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+.pie {
+		position:absolute;
+		width:100px;
+		height:200px;
+		overflow:hidden;
+		left:150px;
+		-moz-transform-origin:left center;
+		-ms-transform-origin:left center;
+		-o-transform-origin:left center;
+		-webkit-transform-origin:left center;
+		transform-origin:left center;
+	}
+/*
+  unless the piece represents more than 50% of the whole chart.
+  then make it a square, and ensure the transform origin is
+  back in the center.
+
+  NOTE: since this is only ever a single piece, you could
+  move this to a piece specific rule and remove the extra class
+*/
+	.pie.big {
+		width:200px;
+		height:200px;
+		left:50px;
+		-moz-transform-origin:center center;
+		-ms-transform-origin:center center;
+		-o-transform-origin:center center;
+		-webkit-transform-origin:center center;
+		transform-origin:center center;
+	}
+/*
+  this is the actual visible part of the pie. 
+  Give it the same dimensions as the regular piece.
+  Use border radius make it a half circle.
+  move transform origin to the middle of the right side.
+  Push it out to the left of the containing box.
+*/
+	.pie:BEFORE {
+		content:"";
+		position:absolute;
+		width:100px;
+		height:200px;
+		left:-100px;
+		border-radius:100px 0 0 100px;
+		-moz-transform-origin:right center;
+		-ms-transform-origin:right center;
+		-o-transform-origin:right center;
+		-webkit-transform-origin:right center;
+		transform-origin:right center;
+		
+	}
+ /* if it's part of a big piece, bring it back into the square */
+	.pie.big:BEFORE {
+		left:0px;
+	}
+/* 
+  big pieces will also need a second semicircle, pointed in the
+  opposite direction to hide the first part behind.
+*/
+	.pie.big:AFTER {
+		content:"";
+		position:absolute;
+		width:100px;
+		height:200px;
+		left:100px;
+		border-radius:0 100px 100px 0;
+	}
+/*
+  add colour to each piece.
+*/
+	.pie:nth-of-type(1):BEFORE,
+	.pie:nth-of-type(1):AFTER {
+		background-color:blue;	
+	}
+	.pie:nth-of-type(2):AFTER,
+	.pie:nth-of-type(2):BEFORE {
+		background-color:green;	
+	}
+	.pie:nth-of-type(3):AFTER,
+	.pie:nth-of-type(3):BEFORE {
+		background-color:red;	
+	}
+	.pie:nth-of-type(4):AFTER,
+	.pie:nth-of-type(4):BEFORE {
+		background-color:orange;	
+	}
+/*
+  now rotate each piece based on their cumulative starting
+  position
+*/
+	.pie[data-start="30"] {
+		-moz-transform: rotate(30deg); /* Firefox */
+		-ms-transform: rotate(30deg); /* IE */
+		-webkit-transform: rotate(30deg); /* Safari and Chrome */
+		-o-transform: rotate(30deg); /* Opera */
+		transform:rotate(30deg);
+	}
+	.pie[data-start="60"] {
+		-moz-transform: rotate(60deg); /* Firefox */
+		-ms-transform: rotate(60deg); /* IE */
+		-webkit-transform: rotate(60deg); /* Safari and Chrome */
+		-o-transform: rotate(60deg); /* Opera */
+		transform:rotate(60deg);
+	}
+	.pie[data-start="100"] {
+		-moz-transform: rotate(100deg); /* Firefox */
+		-ms-transform: rotate(100deg); /* IE */
+		-webkit-transform: rotate(100deg); /* Safari and Chrome */
+		-o-transform: rotate(100deg); /* Opera */
+		transform:rotate(100deg);
+	}
+/*
+  and rotate the amount of the pie that's showing.
+
+  NOTE: add an extra degree to all but the final piece, 
+  to fill in unsightly gaps.
+*/
+	.pie[data-value="30"]:BEFORE {
+		-moz-transform: rotate(31deg); /* Firefox */
+		-ms-transform: rotate(31deg); /* IE */
+		-webkit-transform: rotate(31deg); /* Safari and Chrome */
+		-o-transform: rotate(31deg); /* Opera */
+		transform:rotate(31deg);
+	}
+	.pie[data-value="40"]:BEFORE {
+		-moz-transform: rotate(41deg); /* Firefox */
+		-ms-transform: rotate(41deg); /* IE */
+		-webkit-transform: rotate(41deg); /* Safari and Chrome */
+		-o-transform: rotate(41deg); /* Opera */
+		transform:rotate(41deg);
+	}
+	.pie[data-value="260"]:BEFORE {
+		-moz-transform: rotate(260deg); /* Firefox */
+		-ms-transform: rotate(260deg); /* IE */
+		-webkit-transform: rotate(260deg); /* Safari and Chrome */
+		-o-transform: rotate(260deg); /* Opera */
+		transform:rotate(260deg);
+	}
+.space
+{
+	width: 0px;
+  height: 0px;
+  border-right: 150px solid red;
+  border-top: 150px solid orange;
+  border-left: 150px solid orange;
+  border-bottom: 150px solid orange;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+.space2
+{
+	width:500px;
+	height:30px;
+	background-color:grey;
+}
+.space2.UsersData
+{
+	width:300px;
+	height:30px;
+	background-color:orange;
+}
+.used
+{
+	background-color:orange;
+	width:30px;
+	height:30px;
+}
+.unused
+{
+	background-color:red;
+	width:30px;
+	height:30px;
+}
+.used p
+{
+	margin-left:50px;
+}
+.unused p
+{
+	margin-left:50px;
+}
+
+
+
+.checkmark{
+  display:inline-block;
+  
+  &:after{
+    /*Add another block-level blank space*/
+    content: '';
+    display: block;
+ 
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 3px;
+    height: 6px;
+ 
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+ 
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+  }
+}
+#fixed h1
+{
+	text-align:center;
+}
+.icons
+{
+	float:right;
+	margin-top:-60px;
+	margin-right:150px;
+}
+
+
+
+
+
+/*view users*/
+
+
+.Signup
+{
+	font-size:18px;
+	font-family: "Merriweather";
+	background-image:url("images/Signup/rooms.jpeg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:black;
+	
+}
+
+h1
+{
+	font-family:"Times New Roman", Times, serif;
+}
+.form
+{
+	margin-top:50px;
+	margin-left:10px;
+}
+
+.SelectForm
+{
+	width:200px;
+	height:35px;
+	border-radius:8px;
+}
+
+.SelectForm option
+{
+	Font-size:20px;
+}
+
+.inputSignUp
+{
+	width:200px;
+	height:28px;
+	border-radius:8px;
+
+}
+.inputSignUpp
+{
+	width:200px;
+	height:28px;
+	border-radius:8px;
+	color:orange;
+	font-weight:bold;
+
+}
+.add
+{
+	margin-left:200px;
+	margin-top:200px;
+	
+}
+
+
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 50px;
+font-size:18px;
+height:50px;
+background-color:#edb83a;
+border:none;
+color:white;
+cursor:pointer;
+width:100px;
+transition:1s;
+width:200px;
+height:28px;
+border-radius:8px;
+}
+[type="submit"]:hover
+{
+	opacity:3;
+	background-color: #edb83a;
+	width:130px;
+	transition:1s;
+}
+.Label
+{
+	font-size:18px;
+	font-weight: bold;
+}
+.users
+
+{
+	margin-left: 200px;
+	margin-top: 200px;
+}
+.containerR {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerR input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerR:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerR input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerR input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerR .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.imgserena
+{
+	margin-top:-10px;
+}
+

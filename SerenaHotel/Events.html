@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  Title and icon image  -->
+	 <link rel="icon" href="images/logo.png">
+	 <title>Events</title>
+	 <link rel="stylesheet" href="Includes/styles.css" type="text/css"/>
+	 <script src="Includes/jquery-3.1.1.min.js"></script>
+	 <script src="Includes/scripts.js"></script>	
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta charset="UTF-8">	 
+	 <style>
+		li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		margin:0 auto;
+		font-size:20px;
+			}
+
+		li a:hover {
+		background-color:orange;
+		height:35px;
+			}
+
+	 </style>	 
+	<!-- <script> $(function(){  $("#header").load("header.html"); });</script> -->
+	<!-- <script> $(function(){  $("#header").load("footer.html"); });</script> -->	 
+</head>
+
+
+
+<body>
+<!-- Navigation Bar  -->
+<div class="navbar">
+	<ul>
+		<li> <img id="logoN" src="images/logo.png" alt="Avatar"></li>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="room.html">Rooms</a></li>
+		<li><a href="Restaurants.html">Restauarants</a></li>
+		<li><a href="Events.html">Events</a></li>		
+		<li><a href="Spa.html">Spa</a></li>
+		<li class="login"><a href="login.html">Login</a></li>		
+		
+	</ul>
+</div>
+
+<!-- image Slider  -->
+<div class="slideshow-container" style="height:70%">
+
+    <div class="mySlides fade">
+        <img class="FadeImg" src="images/events/p2.jpeg" style="width:100%" alt="Avatar">       
+    </div>
+	
+    <div class="mySlides fade">
+        <img class="FadeImg" src="images/events/p1.jpeg" style="width:100%" alt="Avatar">       
+    </div>
+	
+    <div class="mySlides fade">
+        <img class="FadeImg" src="images/events/p33.jpeg" style="width:100%" alt="Avatar">        
+    </div>
+	
+    <div class="mySlides fade">
+        <img class="FadeImg" src="images/events/p4.jpeg" style="width:100%" alt="Avatar">        
+    </div>
+	
+	  <div class="mySlides fade">
+        <img class="FadeImg" src="images/events/p5.jpeg" style="width:100%" alt="Avatar">        
+    </div>
+</div>
+<!--  Events Details  -->
+ <button id="flip">Click For Events Details</button>
+	<div id="panel"> FireWorks 8:00PM to 24:00 <br> <br> DJ 1:00AM to 3:00AM  <br><br> Colour Wars on Fridays!!</div>
+<!--  Events Details  -->
+<p id="p1">Join us now, Don't hesitate!</p>
+<button id ="eventClick">Welcome</button>
+<script>
+
+$(document).ready(function(){
+    $("#eventClick").click(function(){
+      
+		$("#p1").css("color", "#b35900").slideUp(2000);
+		$("#p1").html("There is always place for you!").slideDown(2000);
+    });
+});
+</script>
+<!--  Footer -->
+<footer>
+  <p>© Copyright 2018 - Serena  Phone: (200) 333 8890</p>
+</footer>
+</body>
+</html>

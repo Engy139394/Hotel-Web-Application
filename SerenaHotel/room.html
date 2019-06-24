@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="images/logo.png">
+	<title>Rooms</title>
+	<link rel="stylesheet" href="Includes/styles.css" type="text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="Includes/scripts2.js"></script>
+	<meta charset="UTF-8" />
+	<style>
+	body
+	{
+		background-image:url('images/rooms/room.jpeg');
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	.modalcontent {
+		background-image:url('images/rooms/1 (2).jpeg');
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+		height:600px;
+		border-radius:20px;
+		}
+	select
+	{
+		width:60px;
+		height:30px;
+		border-radius:5px;	
+	}
+	#bookbtn
+	{
+		width:150px;
+		height:40px;
+		background-color:#6495ED;
+		border:none;
+		border-radius:5px;
+		color:white;
+		transition:1s;
+	}
+	#bookbtn:hover
+	{
+		width:200px;
+		background-color:orange;
+		transition:1s;
+	}
+	
+
+	</style>
+     <!-- <script> $(function(){  $("#header").load("header.html"); });</script> -->
+	<!-- <script> $(function(){  $("#header").load("footer.html"); });</script> -->
+</head>
+
+<body>
+<!-- Navigation bar -->
+	<div class="navbar">
+		<ul>
+			<li> <img id="logoN" src="images/logo.png" alt="Smiley face"></li>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="room.html">Rooms</a></li>
+			<li><a href="Restaurants.html">Restauarants</a></li>
+			<li><a href="Events.html">Events</a></li>		
+			<li><a href="Spa.html">Spa</a></li>
+			<li class="login"><a href="login.html">Login</a></li>		
+			
+		</ul>
+	</div>
+
+<button id="myBtn">Book Now</button>	
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modalcontent">
+    <span class="close">&times;</span>
+	<h1 style="text-align:center; font-family:Monospace;font-size:30px;">Serena Resort Booking</h1>
+	<form name='registration' onSubmit="return formValidation();" >
+		<label>Check In</label><input type="date" name="checkin" required/><br>
+		<label>Check Out</label><input type="date" name="checkout" required/><br>
+		<label>Adult</label>
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			</select> <br><br>
+		<label>Child</label> 
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select><br> <br>
+		 <label> Room</label>
+        <select>
+            <option value="Deluxe Room">Deluxe Room</option>
+            <option value="Luxury Room">Luxury Room</option>
+            <option value="Premier Room">Premier Room</option>
+            <option value="Deluxe Room">Deluxe Suite</option>
+            <option value="Luxury Room">Luxury Suite</option>
+            <option value="Premier Room">Premier Suite</option>
+        </select> <br><br>
+        
+		<button type="submit" id="bookbtn">Book</button>
+	</form>
+  </div>
+
+</div>
+
+
+
+
+
+<table id="customers">
+  <tr>
+    <th>Period</th>
+    <th>Full Board</th>
+    <th>Half Board</th>
+	<th>Bed & BreakFast</th>
+  </tr>
+  <tr>
+    <td>05/2018 -- 07/2018</td>
+    <td>150£</td>
+    <td>120£</td>
+	<td>100$</td>
+  </tr>
+  <tr>
+    <td>08/2018 -- 10/2018</td>
+    <td>160£</td>
+    <td>130£</td>
+	<td>110$</td>
+  </tr>
+  <tr>
+    <td>10/2018 -- 12/2018</td>
+    <td>170£</td>
+    <td>150£</td>
+	<td>120$</td>
+  </tr>
+  <tr>
+    <td>12/2018 -- 01/2018</td>
+    <td>200£</td>
+    <td>170£</td>
+	<td>140$</td>
+  </tr>
+  <tr>
+    <td>01/2018 -- 02/2018</td>
+    <td>210£</td>
+    <td>180£</td>
+	<td>150$</td>
+  </tr>
+  <tr>
+    <td>02/2018 -- 03/2018</td>
+    <td>220£</td>
+    <td>190£</td>
+	<td>160$</td>
+  </tr>
+  <tr>
+    <td>03/2018 -- 04/2018</td>
+    <td>230£</td>
+    <td>200£</td>
+	<td>170$</td>
+  </tr> 
+</table>
+
+
+<table id="customers3">
+  <tr>
+    <th>Period</th>
+    <th>Full Board</th>
+    <th>Half Board</th>
+	<th>Bed & BreakFast</th>
+  </tr>
+  <tr>
+    <td>sss</td>
+    <td>1sss</td>
+    <td>ssss</td>
+	<td>1sss</td>
+  </tr>
+  <tr>
+    <td>08/2ss8 -- 10/2018</td>
+    <td>1sss</td>
+    <td>130£</td>
+	<td>110$</td>
+  </tr>
+  <tr>
+    <td>10/2018 -- 12/2018</td>
+    <td>170£</td>
+    <td>150£</td>
+	<td>120$</td>
+  </tr>
+  <tr>
+    <td>12/2018 -- 01/2018</td>
+    <td>200£</td>
+    <td>170£</td>
+	<td>140$</td>
+  </tr>
+  <tr>
+    <td>01/2018 -- 02/2018</td>
+    <td>210£</td>
+    <td>180£</td>
+	<td>150$</td>
+  </tr>
+  <tr>
+    <td>02/2018 -- 03/2018</td>
+    <td>220£</td>
+    <td>190£</td>
+	<td>160$</td>
+  </tr>
+  <tr>
+    <td>03/2018 -- 04/2018</td>
+    <td>230£</td>
+    <td>200£</td>
+	<td>170$</td>
+  </tr> 
+</table>
+
+
+
+
+
+
+<table id="customers2">
+	<tr>
+		<th>Daily Rate</th>
+		<th>Not Included</th>
+	</tr>
+	<tr>
+		<td>All Children Are Welcome</td>
+		<td>12% service charge</td>
+	</tr>
+	<tr>
+		<td>Max No of extra beds/children`s cots premitted in a room is 1</td>
+		<td>14% VAT</td>
+	</tr>
+	<tr>
+		<td>All inclusive Basis</td>
+		<td>Free Cancellation up to 7 days before arrival</td>
+	</tr>
+</table>
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+</script>
+	
+	
+</body>

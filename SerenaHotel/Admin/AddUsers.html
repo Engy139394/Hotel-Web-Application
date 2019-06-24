@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="admin/logo.png">
+<title>Add/Decline Users</title>
+<link rel="stylesheet" href="Includes/Admin.css" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">	 
+<script src="Includes/Admin.js"></script>
+<style>
+
+
+
+body
+	{
+		background-image:url('admin/admin.jpeg');
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="User.html">View Users</a>
+  <a href="AddUsers.html">Add or Remove Users</a>
+  <a href="AdminLogin.html">Log Out</a>
+</div>
+
+<div id="main">
+ 
+  <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">&#9776;</span>
+</div>
+
+
+
+
+
+
+
+
+<button class="tablink" onclick="openPage('statistics', this, 'red')">Statistics</button>
+<button class="tablink" onclick="openPage('noofvisits', this, 'blue')">No.Of Visits</button>
+<button class="tablink" onclick="openPage('fixed', this, 'orange')">Fixed Issues</button>
+<button class="tablink" onclick="openPage('usedspace', this, 'red')">Used Space</button>
+
+<div id="statistics" class="tabcontent">
+  <div class="stats">
+
+
+<div class="pie" data-start="0" data-value="30"></div>
+<div class="pie highlight" data-start="30" data-value="30"></div>
+<div class="pie" data-start="60" data-value="40"></div>
+<div class="pie big" data-start="100" data-value="260"></div>
+
+
+<p>Rooms Revenue</p>
+<div class="grey">
+  <div class="green" style="height:24px;width:25%; color:black; text-align:center">25%</div>
+</div>
+<p>Food & Beverage Revenue</p>
+<div class="grey">
+  <div class="red" style="height:24px;width:50%; text-align:center">50%</div>
+</div>
+<p>Managment Fees</p>
+<div class="grey">
+  <div class="blue" style="height:24px;width:75%; text-align:center;">75%</div>
+</div>
+<p>Taxes</p>
+<div class="grey">
+  <div class="orange" style="height:24px;width:90%; text-align:center;">90%</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="noofvisits" class="tabcontent">
+	<h1 id="counter" style="text-align:center;font-family:Monospace;font-size:40px;"></h1><br>
+	<p style="text-align:center;font-family:Monospace;font-size:30px;">Users This Day : 2000</p>
+	<p style="text-align:center;font-family:Monospace;font-size:30px;">Users This Month : 30000</p>
+	<p style="text-align:center;font-family:Monospace;font-size:30px;">Users This Year : 400000</p>
+</div>
+
+<div id="fixed" class="tabcontent">
+<div class="card">
+  <img src="admin/admin.jpg"  style="width:100%" alt="avatar">
+  <h1 style="color:black;">Admin Name</h1>
+  <p class="title" style="color:black;">System Analyst</p>
+  <p style="color:black;">British University <br>In Egypt</p>
+  <div style="margin: 24px 0;">
+		<a href="#"><i class="fa fa-dribbble"></i></a> 
+		<a href="#"><i class="fa fa-twitter"></i></a>  
+		<a href="#"><i class="fa fa-linkedin"></i></a>  
+		<a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+	</div>
+
+<h1>Data Base Issues</h1><br>
+<img src="admin/check.png" class="icons" width="30" height="30" alt="avatar"> 
+<h1>Data Leak Issues</h1><br>
+<img src="admin/check.png" class="icons" width="30" height="30" alt="avatar">
+<h1>Server Down Issues</h1><br>
+<img src="admin/wrong.png" class="icons" width="30" height="30" alt="avatar">
+<h1>Network Issues</h1>
+<img src="admin/wrong.png" class="icons" width="30" height="30" alt="avatar">
+<div class="checkmark"></div>
+</div>
+
+
+
+
+<div id="usedspace" class="tabcontent">
+  
+  <div class="space">
+	
+  </div><br><br>
+  <h1 class="usedtxt">1500 GB USED</h1>
+  <p style="font-size:30px;">2 TeraByte Total Storage</p>
+<div class="points">
+	<div class="used">
+		<p>used</p>
+	</div><br>
+	<div class="unused">
+		<p>Free</p>
+	</div>
+</div>
+</div>
+
+<div class="add">
+<form  name='registration' onSubmit="return formValidation();" class="form">
+		
+			<label class="inputSignUpp"> FirstName </label><input class="inputSignUpp" type="text" name="firstname" size="20" /> &nbsp;
+			<label class="inputSignUpp">LastName </label> <input class="inputSignUp" type="text" name="lastname" size="20" /><br><br>
+			<label class="inputSignUpp">UserName</label> <input class="inputSignUp" type="text" name="username" size="30"  /> &nbsp; 			
+			<label class="inputSignUpp">Address </label> &nbsp;  <input class="inputSignUp" type="text" name="address" size="30"  />&nbsp; &nbsp;<br><br>	
+			<label class="inputSignUpp">ZipCode </label> &nbsp; &nbsp;<input class="inputSignUp" type="text" name="zip" />  &nbsp;
+			<label class="inputSignUpp">Email </label> &nbsp; &nbsp; &nbsp; <input  class="inputSignUpp" type="text" name="email" size="30"/> <br><br>
+			<label class="inputSignUpp">Check In &nbsp; &nbsp;</label><input type="date" name="checkin"/><br><br>
+			<label class="inputSignUpp">Check Out &nbsp; </label><input type="date" name="checkout"/><br> <br>
+			<label class="inputSignUpp">Adult</label>
+			<select>
+				<option>1</option>
+			</select>
+				<br><br>
+			<label class="inputSignUpp">Child</label> 
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select><br> <br>
+			 <label class="inputSignUpp"> Room</label>
+			<select>
+				<option value="Deluxe Room">Deluxe Room</option>
+			</select> <br><br>
+				<input class="inputSignUp" type="submit" name="submit" value="Confirm Account"  />
+				<input class="inputSignUp" type="submit" name="submit" value="Decline Account"  />
+			
+		
+</form>
+</div>
+
+
+
+<script>
+
+
+
+var counter=0;
+setInterval("timer()",500);
+function timer()
+{
+	counter++;
+	$('#counter').text("Users Booking Right Now :"+counter);
+}
+
+</script>
+     
+</body>
+</html> 

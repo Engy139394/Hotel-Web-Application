@@ -1,0 +1,3 @@
+[0320/204432.539:ERROR:persistent_memory_allocator.cc(777)] Corruption detected in shared-memory segment.
+[0320/211022.040:ERROR:persistent_memory_allocator.cc(777)] Corruption detected in shared-memory segment.
+[0323/143413.916:ERROR:file_io.cc(30)] read: expected 36, observed 0
